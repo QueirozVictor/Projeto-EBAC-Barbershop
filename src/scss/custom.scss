@@ -45,9 +45,10 @@
 .header_bg {
     // CAMINHO ABSOLUTO DO VITE: Começar com /src/ garante que o Vite ache a imagem
     background: url("/src/img/superior.webp") center/cover;
-
+    height: auto;
     @media(min-width: 850px) {
         background: url("/src/img/superior.webp") center/cover fixed;
+        height: auto;
     }
 }
 
@@ -76,6 +77,12 @@
     .layout_main {
         padding: 0;
     }
+}
+
+
+img.img-fluid, .card-img-top {
+    max-width: 100%;
+    height: auto !important;
 }
 
 // Services
