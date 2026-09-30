@@ -60,7 +60,6 @@ Remoção do arquivo monolithic `bootstrap.bundle.min.js`. O ponto de entrada Ja
 ### 3. Tratamento de Imagens e Estabilidade Visual
 * **Conversão e Redimensionamento:** Todas as mídias da pasta `src/img/` foram convertidas para o formato moderno **.webp** de alta compressão e redimensionadas para as dimensões reais de exibição.
 * **Estabilidade Estrutural via CSS:** Em vez de fixar dimensões rígidas no HTML que poderiam quebrar a fluidez responsiva, o problema do salto de layout (CLS) foi mitigado definindo propriedades de proporção e limites fluidos (`max-width: 100%` e `height: auto`) diretamente nas classes utilitárias de estilo, garantindo a estabilidade visual durante o carregamento de imagens e cards no mobile e desktop.
-* **Carregamento Fluido:** Aplicação nativa de `loading="lazy"` nas imagens da galeria de serviços que ficam abaixo da dobra.
 
 ### 4. Ajustes de Acessibilidade e SEO
 * Adicionada a tag `<meta name="description">` descritiva para indexação dos motores de busca.
