@@ -1,0 +1,24 @@
+# Dependências do Node (Onde o Bootstrap e o Vite ficam instalados)
+node_modules/
+.pnpm-store/
+
+# Arquivos de Build/Produção (Gerados automaticamente pelo Vite)
+dist/
+build/
+
+# Logs de erro do NPM / Node
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Arquivos de configuração local do VS Code e do Sistema Operacional
+.vscode/
+.DS_Store
+Thumbs.db
+*.local
+
+# Arquivos temporários ou de cache que o Sass/Vite criam em segundo plano
+.sass-cache/
+.eslintcache
+.vite/

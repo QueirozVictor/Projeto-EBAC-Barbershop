@@ -1,0 +1,26 @@
+@use "variables";
+
+.fs-custom{
+    font-size: variables.$font-response;
+}
+
+.text-custom{
+    color: variables.$font-standard;
+    font-size: clamp(2.2rem, 3vw, 4.5rem);
+}
+
+.btn-custom2{
+    background-color: #1a1a1a7c;
+    box-shadow: 0px 0px 5px #e0b94b;
+    border-radius: 5px;
+    color: variables.$font-standard;
+    font-weight: bold; 
+
+    &:hover{
+        background: linear-gradient(to right, #e0b84b86,#1a1a1a );
+        color: variables.$font-standard;
+        
+
+    }
+}
+

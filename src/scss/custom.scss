@@ -1,0 +1,143 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "variables"; 
+@import "utility";
+
+// CORE DO BOOTSTRAP
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// ESTILOS BASE E RESETS
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot"; 
+
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/navbar"; 
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/carousel"; 
+
+// GERADOR DE CLASSES UTILITÁRIAS (d-flex, text-center, etc.)
+@import "../../node_modules/bootstrap/scss/utilities/api";
+@import "../../node_modules/bootstrap/scss/helpers/visually-hidden";
+
+// Header custom
+.title-custom {
+    font-size: 2.5rem;
+    color: $font-standard; // Direto e limpo, sem o prefixo 'variables.'
+
+    @include media-breakpoint-up(lg) {
+        font-size: 3.5rem;
+    }
+
+    &_p {
+        color: $font-standard;
+        font-size: $font-response;
+    }
+}
+
+.header_bg {
+    // CAMINHO ABSOLUTO DO VITE: Começar com /src/ garante que o Vite ache a imagem
+    background: url("/src/img/superior.webp") center/cover;
+
+    @media(min-width: 850px) {
+        background: url("/src/img/superior.webp") center/cover fixed;
+    }
+}
+
+.btn-custom {
+    background-color: $btn-call;
+    border-radius: 8px;
+    border: none;
+    
+    &:hover {
+        background-color: $btn-call-hover;
+    }
+}
+
+// about-us
+.about-us {
+    background: url("/src/img/fundo-movel.webp") center/cover fixed;
+    color: $font-standard;
+}
+
+// Main
+.layout_main {
+    padding: 0rem 8rem;
+}
+
+@media(max-width: 650px) {
+    .layout_main {
+        padding: 0;
+    }
+}
+
+// Services
+.galeria-scroll {
+    scroll-snap-type: x mandatory;
+}
+
+.galeria-scroll img {
+    width: 180px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+.galeria-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.shadow-custom {
+    box-shadow: 0px 0px 2px #e0b94b;
+    border-radius: 5px;
+}
+
+.shadow-custom2 {
+    box-shadow: 0px 0px 2px #e0b94b;
+}
+
+.bg-custom-dark {
+    background-color: $bg-standard;
+}
+
+.flex-custom {
+    display: flex;
+    justify-content: space-between;
+    
+    @media(min-width: 850px) {
+        justify-content: flex-start;
+    }
+}
+
+.div-custom {
+    display: flex;
+    flex-direction: column;
+    
+    @media(min-width: 850px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.form-custom {
+    width: 75%;
+    
+    @media(min-width: 850px) {
+        width: 50%;
+    }
+}
+
+.dep-custom {
+    width: 100%;
+    
+    @media(min-width: 850px) {
+        width: 75%;
+    }
+}
